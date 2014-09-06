@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="col-md-4">
+    <form role="form">
+      {{input type="text" value=searchText class="form-control"}}
+      <span class="help-block">Browse articles by title or keyword</span>
+    </form>
+  </div>
+</div>
+
+<br>
+
+<div class="row">
+  <div class="col-md-8">
+    <ul class="media-list">
+
+      {{#if isSearching}}
+        <h5>Searching...</h5>
+      {{else}}
+        {{#each filteredResults}}
+          <li class="media">
+            <div class="media-body">
+              <h4 class="media-heading">{{headline}}</h4>
+              <p>
+                {{leadParagraph}}
+              </p>
+              <ul class="list-inline">
+                {{#each keywords}}
+                  <span class="label label-info">{{value}}</span>
+                {{/each}}
+              </ul>
+            </div>
+          </li>
+        {{/each}}
+      {{/if}}
+
+    </ul>
+  </div>
+</div>
