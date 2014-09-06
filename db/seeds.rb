@@ -5,6 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+require 'net/http'
+
 API_KEY = "abc6c740f1cfbcd4bea0411df4bc8a74:10:69661191"
 
 ["arts", "sports"].each do |category|
