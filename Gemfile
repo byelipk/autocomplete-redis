@@ -43,3 +43,7 @@ group :development do
   gem 'pry'
   gem 'pry-byebug'
 end
+
+group :production do
+  gem 'pg'
+end
