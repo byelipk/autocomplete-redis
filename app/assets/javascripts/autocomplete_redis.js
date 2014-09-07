@@ -9,4 +9,5 @@
 //= require_tree ./templates
 //= require ./router
 //= require_tree ./routes
+//= require ./transitions.js
 //= require_self
