@@ -55,6 +55,8 @@
   .list-group-item {
     border-right: none;
     border-left: none;
+    border: 1px solid #e7e7e7;
+    outline: 1px solid #fafafa;
   }
   .list-group-item:last-child {
     border-bottom: none;
