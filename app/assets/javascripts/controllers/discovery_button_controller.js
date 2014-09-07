@@ -1,10 +1,10 @@
 // for more details see: http://emberjs.com/guides/controllers/
 
-Kalanso.DiscoveryButtonController = Ember.Controller.extend(
-  Kalanso.Textable, {
+AutocompleteRedis.DiscoveryButtonController = Ember.Controller.extend(
+  AutocompleteRedis.Textable, {
 
     discoveryList: function() {
-      return Kalanso.DiscoveryList.all();
+      return AutocompleteRedis.DiscoveryList.all();
     }.property(),
 
 });

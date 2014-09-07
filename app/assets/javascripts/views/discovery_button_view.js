@@ -1,7 +1,7 @@
 // for more details see: http://emberjs.com/guides/views/
 
-Kalanso.DiscoveryButtonView = Ember.View.extend(
-  Kalanso.Selectable, {
+AutocompleteRedis.DiscoveryButtonView = Ember.View.extend(
+  AutocompleteRedis.Selectable, {
 
   // Properties
   layoutName: 'layouts/discovery_popup',

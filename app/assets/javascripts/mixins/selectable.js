@@ -3,7 +3,7 @@
   or in a new reply/prompt a user creates. It is normally mixed into views
   which must implement this functionality.
 
-  It is to be used in conjunction with the Kalanso.Textable mixin which should
+  It is to be used in conjunction with the AutocompleteRedis.Textable mixin which should
   be included into the view's controller.
 
   The including view might wish to override the .selectText() function and pass
@@ -28,11 +28,11 @@
 
   @class Selectable
   @extends Ember.Mixin
-  @namespace Kalanso
-  @module Kalanso
+  @namespace AutocompleteRedis
+  @module AutocompleteRedis
 **/
 
-Kalanso.Selectable = Ember.Mixin.create({
+AutocompleteRedis.Selectable = Ember.Mixin.create({
   // Default Properties
   isMouseDown: false,
   isTouchInProgress: false,
@@ -150,7 +150,7 @@ Kalanso.Selectable = Ember.Mixin.create({
       options = jQuery.extend(options, c.getProperties('selector', 'showPopup', 'selectableHandler', 'shortCircuitPopup', 'discoverPending', 'bubble'));
 
       if (options.delegate) {
-        // Set a reference to Kalanso.Textable on the controller
+        // Set a reference to AutocompleteRedis.Textable on the controller
         // c.set('textable', this.get('controller'));
       }
 

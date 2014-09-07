@@ -1,7 +1,7 @@
 /**
-    // Kalanso.Textable API for controllers that need an ability to handle text selection //
+    // AutocompleteRedis.Textable API for controllers that need an ability to handle text selection //
 
-      NOTE: Kalanso.Textable is designed to work with a view that includes Kalanso.Selectable
+      NOTE: AutocompleteRedis.Textable is designed to work with a view that includes AutocompleteRedis.Selectable
 
 
       You can implement these properties on your controller:
@@ -24,7 +24,7 @@
 
       If you want a popup to discover response actions in a body of text which
       you are currently editing, set this flag to true. At this time you must
-      mixin Kalanso.ModalDiscoverable which handles making pending discoveries.
+      mixin AutocompleteRedis.ModalDiscoverable which handles making pending discoveries.
 
       When this flag is set to true, the default selector becomes `.pending-discoverable`.
 
@@ -32,11 +32,11 @@
 
   @class Selectable
   @extends Ember.Mixin
-  @namespace Kalanso
-  @module Kalanso
+  @namespace AutocompleteRedis
+  @module AutocompleteRedis
 **/
 
-Kalanso.Textable = Ember.Mixin.create({
+AutocompleteRedis.Textable = Ember.Mixin.create({
   needs: ['prompt', 'promptIndex', 'modalNewReply', 'modalNewPrompt', 'factBin'],
 
   // Properties
@@ -62,7 +62,7 @@ Kalanso.Textable = Ember.Mixin.create({
         cloned, $ancestor, selectedText,
         markerOffset, position, $target, sel;
 
-    if (!Kalanso.CurrentUser) return;
+    if (!AutocompleteRedis.CurrentUser) return;
 
     // Set default properties as if we were making a discovery on a reply
     DEFAULTS = {
@@ -98,7 +98,7 @@ Kalanso.Textable = Ember.Mixin.create({
     $ancestor = $(range.commonAncestorContainer);
 
     if ($ancestor.closest(selector).length > 0) {
-      selectedText = Kalanso.Utilities.selectedText();
+      selectedText = AutocompleteRedis.Utilities.selectedText();
     } else {
       this.set('buffer', '');
       return;

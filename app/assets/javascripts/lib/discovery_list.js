@@ -1,4 +1,4 @@
-Kalanso.DiscoveryList = {
+AutocompleteRedis.DiscoveryList = {
   all: function() {
     return [this.factFinder, this.bridgeBuilder, this.analyzer, this.detective, this.messenger, this.entrepreneur, this.reporter, this.explorer, this.gateKeeper];
   },
