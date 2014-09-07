@@ -1,0 +1,9 @@
+<ul class="list-unstyled discover-body">
+  {{#each discoveryList}}
+    <li class="list-group-item">
+      <button {{action 'save' type nameLower}} class="btn btn-xs btn-mini-plain pull-right">Discover</button>
+      <span style="display: block; font-weight: 400;">{{name}}</span>
+      <small>{{miniDesc}}</small>
+    </li>
+  {{/each}}
+</ul>
