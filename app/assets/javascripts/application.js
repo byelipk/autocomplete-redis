@@ -11,14 +11,14 @@
 // about supported directives.
 //
 //= require jquery
-//= require velocity.min
+//= require velocity
 //= require bootstrap
 //= require handlebars
 //= require ember
-//= require liquid-fire
 //= require ember-data
 //= require_self
 //= require ./autocomplete_redis
+//= require liquid-fire-0.8.1
 
 // for more details see: http://emberjs.com/guides/application/
 AutocompleteRedis = Ember.Application.create();
