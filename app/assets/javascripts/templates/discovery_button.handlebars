@@ -1,0 +1,12 @@
+<ul class="list-unstyled discover-body media-list">
+  {{#each discoveryList}}
+    <li class="list-group-item media">
+      <i {{bind-attr class="avatar"}}>{{char}}</i>
+
+      <div class="media-body">
+        <h5 class="media-heading"><b>{{name}}</b></h5>
+        <small class="text-muted">{{hiddenDesc}}</small>
+      </div>
+    </li>
+  {{/each}}
+</ul>

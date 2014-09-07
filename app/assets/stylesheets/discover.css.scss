@@ -1,0 +1,82 @@
+/* Annotatation popup for response actions */
+.discovery-button {
+  display: none;
+  position: absolute;
+  z-index: 1051; // One index level higher than bs model ;)
+}
+
+.visible {
+  display: block;
+}
+
+.discover {
+  width: 375px;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  background-repeat: repeat-x;
+  border: 1px solid #d5d5d5;
+  ul {
+    background-color: inherit;
+    margin-bottom: 0;
+    .media {
+      background-color: inherit;
+      margin-top: 0px;
+      .media-heading {
+        margin-bottom: 0;
+        font-weight: bolder;
+        font-size: 16px;
+        color: #333333;
+      }
+      &:hover {
+        background-color: #d9d9d9;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.discover-heading {
+  padding: 7px;
+  margin: 0;
+  border-bottom: 1px solid #dedede;
+  color: #333333;
+}
+
+.discover-body {
+  max-height: 518px;
+  overflow: scroll;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  .list-group-item:first-child {
+    border-top: none;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+  .list-group-item {
+    border-right: none;
+    border-left: none;
+  }
+  .list-group-item:last-child {
+    border-bottom: none;
+  }
+}
+
+.discover-overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1050; // Several index levels lower than discovery button ;)
+}
+
+.response-action-container {
+  padding: 5px;
+  text-align: center;
+  a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 3px;
+  }
+}
