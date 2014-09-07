@@ -146,17 +146,17 @@ AutocompleteRedis.Selectable = Ember.Mixin.create({
       };
 
       // Setup options
-      c = controller.watchParentControllerFor(options.id);
-      options = jQuery.extend(options, c.getProperties('selector', 'showPopup', 'selectableHandler', 'shortCircuitPopup', 'discoverPending', 'bubble'));
+      // c = controller.watchParentControllerFor(options.id);
+      // options = jQuery.extend(options, c.getProperties('selector', 'showPopup', 'selectableHandler', 'shortCircuitPopup', 'discoverPending', 'bubble'));
 
-      if (options.delegate) {
+      // if (options.delegate) {
         // Set a reference to AutocompleteRedis.Textable on the controller
         // c.set('textable', this.get('controller'));
-      }
+      // }
 
       controller.set('discoverableId', options.id);
       controller.set('discoverableType', options.type);
-      controller.set('selectableHandler', options.selectableHandler);
+      // controller.set('selectableHandler', options.selectableHandler);
       controller.selectText(options);
     }
   }

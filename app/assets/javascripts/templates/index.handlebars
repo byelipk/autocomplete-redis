@@ -17,19 +17,7 @@
         <h5>Searching...</h5>
       {{else}}
         {{#each filteredResults}}
-          <li class="media">
-            <div class="media-body">
-              <h4 class="media-heading">{{headline}}</h4>
-              <p>
-                {{leadParagraph}}
-              </p>
-              <ul class="list-inline">
-                {{#each keywords}}
-                  <span class="label label-info">{{value}}</span>
-                {{/each}}
-              </ul>
-            </div>
-          </li>
+          {{partial "result"}}
         {{/each}}
       {{/if}}
 
