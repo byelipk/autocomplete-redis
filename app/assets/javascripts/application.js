@@ -11,11 +11,11 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery_ujs
+//= require velocity.min
 //= require bootstrap
-//= require jquery
 //= require handlebars
 //= require ember
+//= require liquid-fire
 //= require ember-data
 //= require_self
 //= require ./autocomplete_redis
