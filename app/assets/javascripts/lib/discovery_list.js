@@ -32,7 +32,7 @@ AutocompleteRedis.DiscoveryList = {
     char: "?",
     nameLower: "bridge builder",
     shortDesc: "Bridge Builders connect different ideas together.",
-    hiddenDesc: "A question that tries to organize facts...",
+    hiddenDesc: "A question that tries to organize facts and ideas...",
     miniDesc: "A question that attempts to organize facts and ideas to determine the relationship among them"
   },
 
@@ -45,7 +45,7 @@ AutocompleteRedis.DiscoveryList = {
     char: "?",
     nameLower: "analyzer",
     shortDesc: "Analyzers expose the hidden logic of a belief.",
-    hiddenDesc: "A question that tries to break down a situation...",
+    hiddenDesc: "A question that tries to break a situation down...",
     miniDesc: "A question that tries to break down a situation into its component parts and clarify its inner logic"
   },
 
@@ -57,8 +57,8 @@ AutocompleteRedis.DiscoveryList = {
     char: "?",
     nameLower: "detective",
     shortDesc: "Detectives identify important missing information.",
-    hiddenDesc: "A question that combines ideas to create...",
-    miniDesc: "A question that combines ideas to help create new solutions or make inferences regarding the future"
+    hiddenDesc: "A question that combines ideas to create new...",
+    miniDesc: "A question that combines ideas to create new solutions or make inferences regarding the future"
   },
 
   messenger: {
@@ -69,7 +69,7 @@ AutocompleteRedis.DiscoveryList = {
     char: "?",
     nameLower: "messenger",
     shortDesc: "Messengers clarify the criteria used to render a judgement.",
-    hiddenDesc: "A question that clarifies the reasoning...",
+    hiddenDesc: "A question that clarifies the criteria used to...",
     miniDesc: "A question that clarifies the reasoning behind a judgement or evaluation made based on certain criteria"
   },
 
@@ -95,7 +95,7 @@ AutocompleteRedis.DiscoveryList = {
     char: "!",
     nameLower: "reporter",
     shortDesc: "Reporters provide accurate and verifiable facts.",
-    hiddenDesc: "A belief that makes factual claims...",
+    hiddenDesc: "A belief that makes factual claims which can be...",
     miniDesc: "A belief that makes factual claims which can be verified through investigation"
   },
 
@@ -108,7 +108,7 @@ AutocompleteRedis.DiscoveryList = {
     char: "!",
     nameLower: "explorer",
     shortDesc: "Explorers make inferences based on facts.",
-    hiddenDesc: "A belief that is based on facts but...",
+    hiddenDesc: "A belief that is based on facts but goes beyond...",
     miniDesc: "A belief that is based on facts but makes claims about what is not currently known"
   },
 
@@ -121,7 +121,7 @@ AutocompleteRedis.DiscoveryList = {
     char: "!",
     nameLower: "gate keeper",
     shortDesc: "Gate Keepers render judgements using a relative set of criteria.",
-    hiddenDesc: "A belief that expresses an evaluation...",
+    hiddenDesc: "A belief that expresses an evaluation based on...",
     miniDesc: "A belief that expresses an evaluation based on certain criteria"
   }
 }
