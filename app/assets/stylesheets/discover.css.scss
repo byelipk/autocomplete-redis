@@ -18,8 +18,14 @@
   ul {
     background-color: inherit;
     margin-bottom: 0;
-    .media {
+    li {
       background-color: inherit;
+      &:hover {
+        background-color: #d9d9d9;
+        cursor: pointer;
+      }
+    }
+    .media {
       margin-top: 0px;
       .media-heading {
         margin-bottom: 0;
@@ -27,10 +33,20 @@
         font-size: 16px;
         color: #333333;
       }
-      &:hover {
-        background-color: #d9d9d9;
-        cursor: pointer;
+    }
+  }
+  .slide-right {
+    height: 59px;
+    margin-top: -10px;
+    padding-top: 10px;
+    padding-right: 15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    &:hover {
+      i {
+        color: #333333;
       }
+      background-color: #E5E0E0;
     }
   }
 }
