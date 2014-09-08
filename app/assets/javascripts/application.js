@@ -15,10 +15,10 @@
 //= require bootstrap
 //= require handlebars
 //= require ember
+//= require liquid-fire-0.8.1
 //= require ember-data
 //= require_self
 //= require ./autocomplete_redis
-//= require liquid-fire-0.8.1
 
 // for more details see: http://emberjs.com/guides/application/
 AutocompleteRedis = Ember.Application.create();

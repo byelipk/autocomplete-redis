@@ -1,19 +1,27 @@
-<ul class="list-unstyled discover-body media-list">
-  {{#each discoveryList}}
-    <li class="list-group-item">
-      <div class="pull-right slide-right">
-        <i class="text-muted glyphicon glyphicon-chevron-right"></i>
-      </div>
+<div class="discover">
+  <h5 class="discover-heading text-center">
+    Tag your discovery
+  </h5>
 
-      <div class="media">
-        <i {{bind-attr class="avatar"}}>{{char}}</i>
+  <ul class="list-unstyled discover-body media-list">
+    {{#each discoveryList}}
 
-
-        <div class="media-body">
-          <h5 class="media-heading"><b>{{name}}</b></h5>
-          <small class="text-muted">{{hiddenDesc}}</small>
+      <li class="list-group-item">
+        <div class="pull-right slide-right">
+          <i class="text-muted glyphicon glyphicon-chevron-right"></i>
         </div>
-      </div>
-    </li>
-  {{/each}}
-</ul>
+
+        <div class="media">
+          <i {{bind-attr class="avatar"}}>{{char}}</i>
+
+          <div class="media-body">
+            <h5 class="media-heading"><b>{{name}}</b></h5>
+            <small class="text-muted">{{hiddenDesc}}</small>
+          </div>
+        </div>
+      </li>
+
+    {{/each}}
+  </ul>
+
+</div>

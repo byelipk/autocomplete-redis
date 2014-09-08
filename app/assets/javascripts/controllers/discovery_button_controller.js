@@ -5,6 +5,5 @@ AutocompleteRedis.DiscoveryButtonController = Ember.Controller.extend(
 
     discoveryList: function() {
       return AutocompleteRedis.DiscoveryList.all();
-    }.property(),
-
+    }.property()
 });
